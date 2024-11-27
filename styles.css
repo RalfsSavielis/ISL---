@@ -115,7 +115,7 @@ header {
 }
 /* Hero Section */
 .hero {
-    background-image: url('images/hero-section.jpg'); /* Ensure this image is in your images folder */
+    background-image: url('hero-section.jpg'); /* Ensure this image is in your images folder */
     background-size: cover;
     background-position: center;
     color: #FFF;
