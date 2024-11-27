@@ -508,6 +508,67 @@ header {
         font-size: 16px;
     }
 }
+/* Parent Portal Section Styling */
+.parent-portal-section {
+    padding: 50px 20px;
+    background-color: #f5f7fa;
+    text-align: center;
+}
+
+.parent-portal-section h2 {
+    font-size: 2.5rem;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.parent-portal-section p {
+    font-size: 1.2rem;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+.portal-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.portal-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.portal-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.portal-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.portal-card h3 {
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.portal-card p {
+    font-size: 1rem;
+    color: #666666;
+}
+
 /* Contact Section */
 .contact-section {
     background-color: #f8f9fb;
