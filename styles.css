@@ -7,14 +7,14 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    color: #2C2C2C;
-    background-color: #f8f9fa;
+    color: #333; /* Dark Gray */
+    background-color: #F5F7FA; /* Light Gray */
 }
 
 /* Header & Navigation */
 header {
-    background-color: #333;
-    color: #FFF;
+    background-color: #333; /* Dark Gray */
+    color: #FFF; /* White */
     padding: 10px 40px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -28,7 +28,7 @@ header {
 .logo {
     font-size: 22px;
     font-weight: bold;
-    color: #FFA500;
+    color: #FFA500; /* Orange */
 }
 
 .nav-links {
@@ -38,7 +38,7 @@ header {
 }
 
 .nav-links a {
-    color: #FFF;
+    color: #FFF; /* White */
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
@@ -46,7 +46,7 @@ header {
 }
 
 .nav-links a:hover {
-    color: #FFA500;
+    color: #FFA500; /* Orange */
 }
 
 /* Search Bar and CTA Button */
@@ -66,12 +66,12 @@ header {
 }
 
 .search-bar:focus {
-    border-color: #FFA500;
+    border-color: #FFA500; /* Orange */
 }
 
 .cta-button {
-    background-color: #FFA500;
-    color: #333;
+    background-color: #FFA500; /* Orange */
+    color: #FFF; /* White */
     padding: 10px 20px;
     border: none;
     border-radius: 20px;
@@ -82,43 +82,15 @@ header {
 }
 
 .cta-button:hover {
-    background-color: #e69500;
+    background-color: #E69500; /* Slightly darker orange */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-
-    .navbar {
-        justify-content: space-between;
-    }
-
-    .search-bar {
-        width: 150px;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        font-size: 18px;
-    }
-
-    .search-bar {
-        display: none;
-    }
-
-    .cta-button {
-        padding: 8px 16px;
-    }
-}
 /* Hero Section */
 .hero {
     background-image: url('hero-section.jpg'); /* Ensure this image is in your images folder */
     background-size: cover;
     background-position: center;
-    color: #FFF;
+    color: #FFF; /* White */
     text-align: center;
     padding: 150px 20px;
     display: flex;
@@ -135,7 +107,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Overlay for readability */
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
     z-index: 1;
 }
 
@@ -160,8 +132,8 @@ header {
 }
 
 .hero-btn {
-    background-color: #FFA500;
-    color: #333;
+    background-color: #FFA500; /* Orange */
+    color: #FFF; /* White */
     padding: 12px 24px;
     border: none;
     border-radius: 30px;
@@ -172,608 +144,65 @@ header {
 }
 
 .hero-btn:hover {
-    background-color: #e69500;
+    background-color: #E69500; /* Slightly darker orange */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 36px;
-    }
-    .hero p {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero {
-        padding: 100px 20px;
-    }
-    .hero h1 {
-        font-size: 28px;
-    }
-    .hero p {
-        font-size: 16px;
-    }
-    .hero-btn {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-}
-/* About Us Section */
+/* Section Background Colors */
 .about-section {
-    background-color: #f9f9fb;
-    padding: 60px 20px;
-    text-align: center;
-    color: #2c2c2c;
+    background-color: #FFF; /* White */
+    color: #333; /* Dark Gray */
 }
 
-.about-section h2 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.about-section p {
-    font-size: 18px;
-    margin-bottom: 40px;
-    max-width: 800px;
-    margin: 0 auto 40px;
-}
-
-.about-cards {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.about-card {
-    background-color: #ffffff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 300px;
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.about-card:hover {
-    transform: translateY(-5px);
-}
-
-.about-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 15px;
-}
-
-.about-card h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.about-card p {
-    font-size: 16px;
-    color: #666;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .about-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-    .about-card {
-        max-width: 80%;
-    }
-}
-
-@media (max-width: 480px) {
-    .about-section h2 {
-        font-size: 28px;
-    }
-    .about-section p {
-        font-size: 16px;
-    }
-    .about-card h3 {
-        font-size: 20px;
-    }
-    .about-card p {
-        font-size: 14px;
-    }
-}
-/* Programs Section */
 .programs-section {
-    background-color: #f8f9fb;
-    padding: 60px 20px;
-    text-align: center;
-    color: #2c2c2c;
+    background-color: #F5F7FA; /* Light Gray */
+    color: #333; /* Dark Gray */
 }
 
-.programs-section h2 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.programs-section p {
-    font-size: 18px;
-    margin-bottom: 40px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.program-cards {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.program-card {
-    background-color: #ffffff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 280px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.program-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.program-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 15px;
-}
-
-.program-card h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.program-card p {
-    font-size: 16px;
-    color: #666;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .program-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-    .program-card {
-        max-width: 80%;
-    }
-}
-
-@media (max-width: 480px) {
-    .programs-section h2 {
-        font-size: 28px;
-    }
-    .programs-section p {
-        font-size: 16px;
-    }
-    .program-card h3 {
-        font-size: 20px;
-    }
-    .program-card p {
-        font-size: 14px;
-    }
-}
-/* Events Calendar Section Styling */
 .calendar-section {
-    padding: 50px 20px;
-    background-color: #ffffff;
-    text-align: center;
+    background-color: #FFF; /* White */
+    color: #333; /* Dark Gray */
 }
 
-.calendar-section h2 {
-    font-size: 2.5rem;
-    color: #333333;
-    margin-bottom: 10px;
-}
-
-.calendar-section p {
-    font-size: 1.2rem;
-    color: #555555;
-    margin-bottom: 30px;
-}
-
-.calendar-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    justify-items: center;
-}
-
-.calendar-card {
-    background-color: #f5f7fa;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
-    max-width: 300px;
-}
-
-.calendar-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.calendar-icon {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 15px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.calendar-card h3 {
-    font-size: 1.5rem;
-    color: #333333;
-    margin-bottom: 10px;
-}
-
-.calendar-card p {
-    font-size: 1rem;
-    color: #666666;
-}
-
-.calendar-card strong {
-    color: #333333;
-}
-
-/* Admissions Section */
 .admissions-section {
-    background-color: #f4f6f8;
-    padding: 60px 20px;
-    text-align: center;
-    color: #2c2c2c;
+    background-color: #F5F7FA; /* Light Gray */
+    color: #333; /* Dark Gray */
 }
 
-.admissions-section h2 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.admissions-section p {
-    font-size: 18px;
-    margin-bottom: 40px;
-    max-width: 800px;
-    margin: 0 auto 40px;
-}
-
-.admissions-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.admissions-info {
-    max-width: 400px;
-    text-align: left;
-}
-
-.admissions-info h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.steps-list {
-    list-style-type: disc;
-    padding-left: 20px;
-    font-size: 16px;
-    color: #666;
-}
-
-.steps-list li {
-    margin-bottom: 10px;
-}
-
-.admissions-image img {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.admissions-btn {
-    display: inline-block;
-    margin-top: 30px;
-    background-color: #FFA500;
-    color: #333;
-    padding: 12px 24px;
-    border-radius: 30px;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.admissions-btn:hover {
-    background-color: #e69500;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .admissions-content {
-        flex-direction: column;
-    }
-    .admissions-info, .admissions-image {
-        max-width: 80%;
-    }
-}
-/* Testimonials Section */
 .testimonials-section {
-    background-color: #fdfdfd;
-    padding: 60px 20px;
-    text-align: center;
-    color: #2c2c2c;
+    background-color: #FFF; /* White */
+    color: #333; /* Dark Gray */
 }
 
-.testimonials-section h2 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 40px;
-}
-
-.testimonials-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.testimonial {
-    font-style: italic;
-    font-size: 18px;
-    color: #666;
-    line-height: 1.6;
-    max-width: 600px;
-    background-color: #fff;
-    padding: 20px 30px;
-    border-left: 4px solid #FFA500;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-}
-
-.testimonial span {
-    display: block;
-    margin-top: 15px;
-    font-size: 16px;
-    color: #333;
-    font-weight: bold;
-    text-align: right;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .testimonials-section h2 {
-        font-size: 28px;
-    }
-    .testimonial {
-        font-size: 16px;
-    }
-}
-/* Parent Portal Section Styling */
 .parent-portal-section {
-    padding: 50px 20px;
-    background-color: #f5f7fa;
-    text-align: center;
+    background-color: #F5F7FA; /* Light Gray */
+    color: #333; /* Dark Gray */
 }
 
-.parent-portal-section h2 {
-    font-size: 2.5rem;
-    color: #333333;
-    margin-bottom: 10px;
-}
-
-.parent-portal-section p {
-    font-size: 1.2rem;
-    color: #555555;
-    margin-bottom: 30px;
-}
-
-.portal-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    justify-items: center;
-}
-
-.portal-card {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
-    max-width: 300px;
-}
-
-.portal-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.portal-icon {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 15px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.portal-card h3 {
-    font-size: 1.5rem;
-    color: #333333;
-    margin-bottom: 10px;
-}
-
-.portal-card p {
-    font-size: 1rem;
-    color: #666666;
-}
-
-/* Contact Section */
 .contact-section {
-    background-color: #f8f9fb;
-    padding: 60px 20px;
-    text-align: center;
-    color: #2c2c2c;
+    background-color: #FFF; /* White */
+    color: #333; /* Dark Gray */
 }
 
-.contact-section h2 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.contact-section p {
-    font-size: 18px;
-    margin-bottom: 40px;
-}
-
-.contact-content {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 18px;
-    color: #333;
-}
-
-.contact-icon {
-    width: 30px;
-    height: 30px;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 400px;
-    width: 100%;
-}
-
-.contact-form label {
-    font-size: 16px;
-    color: #333;
-    text-align: left;
-}
-
-.contact-form input, .contact-form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #333;
-}
-
-.contact-form textarea {
-    height: 120px;
-    resize: vertical;
-}
-
-.contact-form button {
-    background-color: #FFA500;
-    color: #333;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 30px;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.contact-form button:hover {
-    background-color: #e69500;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .contact-content {
-        flex-direction: column;
-        align-items: center;
-    }
-}
 /* Footer Section */
 .footer-section {
-    background-color: #333;
-    color: #fff;
+    background-color: #333; /* Dark Gray */
+    color: #FFF; /* White */
     text-align: center;
     padding: 30px 20px;
     font-size: 16px;
 }
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
 .footer-content p {
-    margin: 0;
-    font-size: 14px;
-    color: #ddd;
-}
-
-.social-links {
-    display: flex;
-    gap: 15px;
+    color: #DDD; /* Lighter Gray */
 }
 
 .social-icon {
-    color: #FFA500;
+    color: #FFA500; /* Orange */
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s;
 }
 
 .social-icon:hover {
-    color: #e69500;
-}
-
-/* Responsive Design */
-@media (max-width: 480px) {
-    .footer-content {
-        font-size: 14px;
-    }
-    .social-icon {
-        font-size: 14px;
-    }
+    color: #E69500; /* Slightly darker orange */
 }
